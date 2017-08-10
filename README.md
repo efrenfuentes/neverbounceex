@@ -1,6 +1,6 @@
-# Neverbounceex
+# NeverBounceEx
 
-**TODO: Add description**
+NeverBounce API Elixir wrapper. It provides helpful methods to quickly implement NeverBounce API in your Elixir applications
 
 ## Installation
 
@@ -18,4 +18,3 @@ end
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/neverbounceex](https://hexdocs.pm/neverbounceex).
-
