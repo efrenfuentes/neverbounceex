@@ -1,6 +1,6 @@
-defmodule Neverbounceex do
+defmodule NeverBounceEx do
   @moduledoc """
-  Documentation for Neverbounceex.
+  Documentation for NeverBounceEx.
   """
 
   @doc """
@@ -8,7 +8,7 @@ defmodule Neverbounceex do
 
   ## Examples
 
-      iex> Neverbounceex.hello
+      iex> NeverBounceEx.hello
       :world
 
   """

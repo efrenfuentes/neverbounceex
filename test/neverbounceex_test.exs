@@ -1,8 +1,8 @@
-defmodule NeverbounceexTest do
+defmodule NeverBounceExTest do
   use ExUnit.Case
-  doctest Neverbounceex
+  doctest NeverBounceEx
 
   test "greets the world" do
-    assert Neverbounceex.hello() == :world
+    assert NeverBounceEx.hello() == :world
   end
 end

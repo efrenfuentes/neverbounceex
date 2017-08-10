@@ -1,4 +1,4 @@
-defmodule Neverbounceex.Mixfile do
+defmodule NeverBounceEx.Mixfile do
   use Mix.Project
 
   def project do
@@ -15,7 +15,7 @@ defmodule Neverbounceex.Mixfile do
   def application do
     [
       extra_applications: [:logger],
-      mod: {Neverbounceex.Application, []}
+      mod: {NeverBounceEx.Application, []}
     ]
   end
 
