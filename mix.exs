@@ -27,4 +27,16 @@ defmodule NeverBounceEx.Mixfile do
       {:credo, "~> 0.8", only: [:dev, :test], runtime: false}
     ]
   end
+
+  def package do
+    [
+      maintainers: [ "efrenfuentes" ],
+      licenses: [ "MIT" ],
+      links: %{ "Github" => "https://github.com/efrenfuentes/neverbounceex" }
+    ]
+  end
+
+  def description do
+    "Elixir wrapper to use NeverBounce API"
+  end
 end
