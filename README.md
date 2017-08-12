@@ -6,8 +6,8 @@ NeverBounce API Elixir wrapper. It provides helpful methods to quickly implement
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `neverbounceex` to your list of dependencies in `mix.exs`:
+To use it in your Mix projects, first add `neverbounceex` to your list of dependencies in `mix.exs`:
+
 
 ```elixir
 def deps do
@@ -17,6 +17,32 @@ def deps do
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/neverbounceex](https://hexdocs.pm/neverbounceex).
+Add `neverbounceex` as applications:
+
+```elixir
+def application do
+  [
+    extra_applications: [:logger, :neverbounceex]
+  ]
+end
+```
+
+Then run mix deps.get to install it.
+
+## Application config
+
+```elixir
+config :neverbounceex,
+  username: "your_username",
+  secret_key: "your_secret_key",
+```
+
+## Using the application
+
+Just call NeverBounceEx.single/1 with the email to validate:
+
+```elixir
+Interactive Elixir (1.5.0) - press Ctrl+C to exit (type h() ENTER for help)
+iex(1)> NeverBounceEx.single("efrenfuentes@gmail.com")
+{:ok, "valid"}
+```
