@@ -7,7 +7,9 @@ defmodule NeverBounceEx.Mixfile do
       version: "0.1.0",
       elixir: "~> 1.5",
       start_permanent: Mix.env == :prod,
-      deps: deps()
+      deps: deps(),
+      package: package(),
+      description: description()
     ]
   end
 
@@ -24,11 +26,12 @@ defmodule NeverBounceEx.Mixfile do
     [
       {:httpoison, "~> 0.12"},
       {:poison, "~> 3.1"},
-      {:credo, "~> 0.8", only: [:dev, :test], runtime: false}
+      {:credo, "~> 0.8", only: [:dev, :test], runtime: false},
+      {:ex_doc, "~> 0.16", only: :dev}
     ]
   end
 
-  def package do
+  defp package do
     [
       maintainers: [ "efrenfuentes" ],
       licenses: [ "MIT" ],
@@ -36,7 +39,7 @@ defmodule NeverBounceEx.Mixfile do
     ]
   end
 
-  def description do
+  defp description do
     "Elixir wrapper to use NeverBounce API"
   end
 end
