@@ -1,5 +1,7 @@
 # NeverBounceEx
 
+[![Hex.pm](https://img.shields.io/hexpm/v/neverbounceex.svg)](https://hex.pm/packages/neverbounceex)
+
 NeverBounce API Elixir wrapper. It provides helpful methods to quickly implement NeverBounce API in your Elixir applications
 
 ## Installation
